@@ -1,4 +1,4 @@
-import basePageObject from "./basePageObject";
+import basePageObject from ""
 
 class homePage_PO extends basePageObject {
 

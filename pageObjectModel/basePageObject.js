@@ -165,6 +165,34 @@ class basePageObject {
         return this.page.locator(parentLocator).locator(childLocator);
     }
 
+    async getByRole(role, options) {
+        return this.page.getByRole(role, options);
+      }
+    
+      async getByText(text, options) {
+        return this.page.getByText(text, options);
+      }
+    
+      async getByLabel(label, options) {
+        return this.page.getByLabel(label, options);
+      }
+    
+      async getByPlaceholder(placeholder, options) {
+        return this.page.getByPlaceholder(placeholder, options);
+      }
+    
+      async getByAltText(alt, options) {
+        return this.page.getByAltText(alt, options);
+      }
+    
+      async getByTitle(title, options) {
+        return this.page.getByTitle(title, options);
+      }
+    
+      async getByTestId(testId, options) {
+        return this.page.getByTestId(testId, options);
+      }
+
 }
 
-export default new basePageObject();
+export default basePageObject
